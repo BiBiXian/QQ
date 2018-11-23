@@ -1,0 +1,14 @@
+<template>
+  <div class="split"></div>
+</template>
+
+<script>
+  export default {}
+</script>
+
+<style lang="sass" rel="stylesheet/scss" scoped>
+  .split
+    width: 100%
+    height: 16px
+    background: #f3f5f7
+</style>
