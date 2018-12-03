@@ -10,7 +10,6 @@ export function timeDesc(time) {
     let m = timeDate.getMinutes() + '' // 转化成字符串
     h = h > 12 ? `下午${h - 12}` : `上午${h}`
     m = returnDoubleDate(m)
-
     return h + ':' + m
   } else if (decDay === 1) {
     // TODO: 逻辑处理有问题的  昨天
