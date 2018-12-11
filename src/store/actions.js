@@ -21,8 +21,6 @@ export default {
     // console.log(id)
     commit(types.RECEVIVE_USER_ID, id) // 指定当前展示主页用户id
   },
-  // 将action 封装成以一个promise以后，当该action执行完毕后会调用resolve方法
-  // 外部调用该action函数可以通过then回调函数确保当前action执行完毕
   sendMyMsg({commit}, payload) {
     return new Promise(resolve => {
       commit(types.ADD_MESSAGE, payload)

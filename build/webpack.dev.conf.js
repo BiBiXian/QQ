@@ -31,7 +31,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   // these devServer options should be customized in /config/index.js
   devServer: {
     before(app) {
-      console.log(app)
       app.get('/api/self', (req, res) => {
         res.json({data: self})
       })
@@ -39,8 +38,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         res.json({data: friends})
       })
       app.get('/api/robot', (req, res) => {
-        // 当请求http://localhost:8080/api/robot?id=123&msg=hello
-        // req.query = {id: 123,msg: 'hello'}
         // console.log(req.query)
         let info = req.query.msg
         let userid = req.query.id
